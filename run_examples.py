@@ -1,4 +1,5 @@
 """Run sample executions of the algorithms and print the results."""
+
 from dataclasses import dataclass
 from algorithms import (binary_search, merge_sort, quick_sort, insertion_sort,
     selection_sort, bubble_sort, counting_sort, radix_sort, bucket_sort,

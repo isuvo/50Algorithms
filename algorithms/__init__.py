@@ -51,6 +51,7 @@ from .principal_component_analysis import pca
 from .apriori import apriori
 from .simulated_annealing import simulated_annealing
 
+
 __all__ = [
     "binary_search",
     "merge_sort",

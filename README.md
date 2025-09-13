@@ -13,7 +13,6 @@ python run_examples.py
 to run the sample implementations and see output for the algorithms that are currently implemented.
 
 ## Implemented algorithms and complexities
-
 | # | Algorithm | Description | Time complexity | Space complexity |
 | - | --------- | ----------- | --------------- | ---------------- |
 | 1 | Binary Search | Locate an item in a sorted list via bisection | O(log n) | O(1) |
@@ -70,7 +69,6 @@ to run the sample implementations and see output for the algorithms that are cur
 \* Worst case O(n^2)
 
 ## Algorithm index
-
 1. `binary_search` – Locate an item in a sorted list by halving the search interval. Run: `python run_examples.py`
 2. `merge_sort` – Stable divide-and-conquer sorting by merging sorted halves. Run: `python run_examples.py`
 3. `quick_sort` – Partition-based sorting around a pivot. Run: `python run_examples.py`
@@ -120,4 +118,4 @@ to run the sample implementations and see output for the algorithms that are cur
 47. `k_means` – Unsupervised clustering. Run: `python run_examples.py`
 48. `principal_component_analysis` – Dimensionality reduction. Run: `python run_examples.py`
 49. `apriori` – Frequent itemset mining. Run: `python run_examples.py`
-50. `simulated_annealing` – Stochastic optimization technique. Run: `python run_examples.py`
+50. `simulated_annealing` – Stochastic optimization technique. Run: `python run_examples.p
