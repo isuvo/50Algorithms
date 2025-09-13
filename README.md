@@ -14,7 +14,6 @@ To execute individual algo
 
 ```
 python algorithms/prim.py
-
 ```
 
 to run the sample implementations and see output for the algorithms that are currently implemented.
