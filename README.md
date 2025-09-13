@@ -31,8 +31,7 @@ the whole demo script.
 ### Using the accompanying book
 
 A PDF copy of *50 Algorithms Every Programmer Should Know* is included at the
-repository root as `Imran A. 50 Algorithms Every Programmer Should Know, 2ed
-Python algorithms 2023.pdf`. Read detailed explanations of each algorithm alongside the code in this repository.
+repository root.
 
 ## Implemented algorithms and complexities
 
