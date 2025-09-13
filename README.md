@@ -14,34 +14,34 @@ to run the sample implementations and see output for the algorithms that are cur
 
 ## Implemented algorithms and complexities
 
-| Algorithm       | Description                                   | Time complexity | Space complexity |
-| --------------- | --------------------------------------------- | --------------- | ---------------- |
-| Binary Search   | Locate an item in a sorted list via bisection | O(log n)        | O(1)             |
-| Merge Sort      | Divide-and-conquer stable sorting             | O(n log n)      | O(n)             |
-| Quick Sort      | Partition-based sorting around a pivot        | O(n log n)*     | O(log n)         |
-| Insertion Sort  | Insert each item into sorted prefix          | O(n^2)          | O(1)             |
-| Selection Sort  | Repeatedly select minimum element            | O(n^2)          | O(1)             |
-| Bubble Sort     | Swap adjacent out-of-order items             | O(n^2)          | O(1)             |
-| Counting Sort   | Count occurrences of small integer keys      | O(n + k)        | O(k)             |
-| Radix Sort      | Digit-wise sorting using counting sort       | O(d*(n + b))    | O(n + b)         |
-| Bucket Sort     | Distribute and sort into buckets             | O(n + k)        | O(n)             |
-| Heap Sort       | Sort via binary heap operations              | O(n log n)      | O(n)             |
-| Shell Sort      | Gap-based insertion sort                     | ~O(n^{3/2})     | O(1)             |
-| Quickselect     | Select k-th element using partitioning       | O(n) avg        | O(1)             |
-| Breadth-First Search | Layer-by-layer graph traversal          | O(V + E)        | O(V)             |
-| Depth-First Search  | Recursive graph traversal                | O(V + E)        | O(V)             |
-| Dijkstra            | Shortest paths in weighted graphs        | O(E log V)      | O(V)             |
-| Bellman-Ford        | Shortest paths with negative weights     | O(V * E)        | O(V)             |
-| Floyd-Warshall      | All-pairs shortest paths                 | O(V^3)          | O(V^2)           |
-| Topological Sort    | DAG vertex ordering                      | O(V + E)        | O(V)             |
-| Kruskal             | Minimum spanning tree via edge sorting   | O(E log E)      | O(V)             |
-| Prim                | Minimum spanning tree via greedy growth  | O(E log V)      | O(V)             |
-| Union-Find          | Disjoint-set union structure             | ~O(α(n))        | O(n)             |
-| Euclid GCD          | Greatest common divisor                  | O(log n)        | O(1)             |
-| Sieve of Eratosthenes | Generate primes up to n               | O(n log log n)  | O(n)             |
-| Exponentiation by Squaring | Fast power calculation           | O(log n)        | O(1)             |
-| KMP Search          | Linear-time substring search             | O(n + m)        | O(m)             |
-| Rabin-Karp          | Rolling-hash substring search            | O(n + m) avg    | O(1)             |
+| # | Algorithm       | Description                                   | Time complexity | Space complexity |
+| - | --------------- | --------------------------------------------- | --------------- | ---------------- |
+| 1 | Binary Search   | Locate an item in a sorted list via bisection | O(log n)        | O(1)             |
+| 2 | Merge Sort      | Divide-and-conquer stable sorting             | O(n log n)      | O(n)             |
+| 3 | Quick Sort      | Partition-based sorting around a pivot        | O(n log n)*     | O(log n)         |
+| 4 | Insertion Sort  | Insert each item into sorted prefix          | O(n^2)          | O(1)             |
+| 5 | Selection Sort  | Repeatedly select minimum element            | O(n^2)          | O(1)             |
+| 6 | Bubble Sort     | Swap adjacent out-of-order items             | O(n^2)          | O(1)             |
+| 7 | Counting Sort   | Count occurrences of small integer keys      | O(n + k)        | O(k)             |
+| 8 | Radix Sort      | Digit-wise sorting using counting sort       | O(d*(n + b))    | O(n + b)         |
+| 9 | Bucket Sort     | Distribute and sort into buckets             | O(n + k)        | O(n)             |
+| 10 | Heap Sort       | Sort via binary heap operations              | O(n log n)      | O(n)             |
+| 11 | Shell Sort      | Gap-based insertion sort                     | ~O(n^{3/2})     | O(1)             |
+| 12 | Quickselect     | Select k-th element using partitioning       | O(n) avg        | O(1)             |
+| 13 | Breadth-First Search | Layer-by-layer graph traversal          | O(V + E)        | O(V)             |
+| 14 | Depth-First Search  | Recursive graph traversal                | O(V + E)        | O(V)             |
+| 15 | Dijkstra            | Shortest paths in weighted graphs        | O(E log V)      | O(V)             |
+| 16 | Bellman-Ford        | Shortest paths with negative weights     | O(V * E)        | O(V)             |
+| 17 | Floyd-Warshall      | All-pairs shortest paths                 | O(V^3)          | O(V^2)           |
+| 18 | Topological Sort    | DAG vertex ordering                      | O(V + E)        | O(V)             |
+| 19 | Kruskal             | Minimum spanning tree via edge sorting   | O(E log E)      | O(V)             |
+| 20 | Prim                | Minimum spanning tree via greedy growth  | O(E log V)      | O(V)             |
+| 21 | Union-Find          | Disjoint-set union structure             | ~O(α(n))        | O(n)             |
+| 22 | Euclid GCD          | Greatest common divisor                  | O(log n)        | O(1)             |
+| 23 | Sieve of Eratosthenes | Generate primes up to n               | O(n log log n)  | O(n)             |
+| 24 | Exponentiation by Squaring | Fast power calculation           | O(log n)        | O(1)             |
+| 25 | KMP Search          | Linear-time substring search             | O(n + m)        | O(m)             |
+| 26 | Rabin-Karp          | Rolling-hash substring search            | O(n + m) avg    | O(1)             |
 
 \* Worst case O(n^2)
 
