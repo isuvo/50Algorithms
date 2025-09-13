@@ -30,8 +30,7 @@ the whole demo script.
 
 ### Using the accompanying book
 
-A PDF copy of *50 Algorithms Every Programmer Should Know* is included at the
-repository root.
+A PDF copy of *50 Algorithms Every Programmer Should Know* is included at the repository root.
 
 ## Implemented algorithms and complexities
 
