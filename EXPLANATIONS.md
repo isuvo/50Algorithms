@@ -52,3 +52,4 @@ Friendly, step-by-step guides to each algorithm:
 48. [Principal Component Analysis](explanations/principal-component-analysis.md)
 49. [Apriori](explanations/apriori.md)
 50. [Simulated Annealing](explanations/simulated-annealing.md)
+
