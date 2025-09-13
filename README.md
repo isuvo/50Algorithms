@@ -32,10 +32,7 @@ the whole demo script.
 
 A PDF copy of *50 Algorithms Every Programmer Should Know* is included at the
 repository root as `Imran A. 50 Algorithms Every Programmer Should Know, 2ed
-Python algorithms 2023.pdf`.  Open it with your favourite PDF reader
-(`xdg-open` on Linux, `open` on macOS, or simply double‑click on Windows) to
-read detailed explanations of each algorithm alongside the code in this
-repository.
+Python algorithms 2023.pdf.
 
 ## Implemented algorithms and complexities
 
