@@ -1,13 +1,29 @@
+"""Minimax algorithm for game trees.
+
+Finds the optimal value assuming both players play optimally.
+
+Time complexity: O(b^d)
+Space complexity: O(d)
+"""
+from __future__ import annotations
+from typing import List, Optional
+
 class Node:
-    def __init__(self, value=None, children=None):
+    """A node in a game tree."""
+    def __init__(self, value: Optional[int] = None, children: Optional[List[Node]] = None):
         self.value = value
         self.children = children or []
 
+def minimax(node: Node, maximizing: bool) -> int:
+    """
+    Compute the minimax value of a game tree.
 
-def minimax(node, maximizing):
-    """Compute minimax value of a game tree.
+    Args:
+        node: The root node of the game tree.
+        maximizing: Whether the current player is maximizing or minimizing.
 
-    Time: O(b^d), Space: O(d)
+    Returns:
+        The minimax value of the game tree.
     """
     if not node.children:
         return node.value

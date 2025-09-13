@@ -1,11 +1,13 @@
 """Radix sort algorithm for non-negative integers (base 10, LSD variant).
 
 Sorts numbers digit by digit using counting sort as a subroutine.
-Time Complexity: O(d * (n + b)) where d is number of digits and b is base.
+Time Complexity: O(d * (n + b)) where d is the number of digits in the largest
+number, n is the number of elements, and b is the base (10 in this case).
 Space Complexity: O(n + b)
 """
+from typing import List
 
-def radix_sort(arr):
+def radix_sort(arr: List[int]) -> List[int]:
     """Return a new list containing the sorted elements of *arr* using radix sort."""
     if not arr:
         return []
@@ -27,3 +29,9 @@ def radix_sort(arr):
         result = output
         exp *= 10
     return result
+
+if __name__ == "__main__":
+    unsorted_list = [170, 45, 75, 90, 802, 24, 2, 66]
+    sorted_list = radix_sort(unsorted_list)
+    print(f"Unsorted list: {unsorted_list}")
+    print(f"Sorted list: {sorted_list}")

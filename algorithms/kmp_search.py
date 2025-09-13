@@ -1,13 +1,15 @@
 """Knuth-Morris-Pratt substring search algorithm.
 
 Uses a prefix table to avoid redundant comparisons.
-Time Complexity: O(n + m)
-Space Complexity: O(m)
+Time Complexity: O(n + m), where n is the length of the text and m is the length
+of the pattern.
+Space Complexity: O(m), where m is the length of the pattern.
 """
+from typing import List
 
-def kmp_search(text, pattern):
+def kmp_search(text: str, pattern: str) -> List[int]:
     """Return starting indices where *pattern* is found within *text*."""
-    if pattern == "":
+    if not pattern:
         return list(range(len(text) + 1))
     lps = [0] * len(pattern)
     j = 0
@@ -28,3 +30,12 @@ def kmp_search(text, pattern):
                 res.append(i - j + 1)
                 j = lps[j - 1]
     return res
+
+if __name__ == "__main__":
+    text = "ABABDABACDABABCABAB"
+    pattern = "ABABCABAB"
+    indices = kmp_search(text, pattern)
+    if indices:
+        print(f'Pattern "{pattern}" found at indices: {indices}')
+    else:
+        print(f'Pattern "{pattern}" not found')

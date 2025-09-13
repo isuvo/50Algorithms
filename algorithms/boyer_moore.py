@@ -1,8 +1,26 @@
-def boyer_moore(text, pattern):
-    """Boyer-Moore string search using bad-character heuristic.
+"""
+Boyer-Moore string search algorithm.
 
-    Returns the starting index of pattern in text or -1.
-    Time: O(n) average, Space: O(m)
+This implementation of the Boyer-Moore algorithm finds the first occurrence of a
+pattern in a text. It uses the bad-character heuristic to skip sections of the
+text, which makes it faster than naive string search algorithms in practice.
+
+Time Complexity: O(n*m) in the worst case, but O(n) on average, where n is the
+length of the text and m is the length of the pattern.
+Space Complexity: O(m), where m is the length of the pattern.
+"""
+
+def boyer_moore(text: str, pattern: str) -> int:
+    """
+    Boyer-Moore string search using the bad-character heuristic.
+
+    Args:
+        text: The text to search in.
+        pattern: The pattern to search for.
+
+    Returns:
+        The starting index of the first occurrence of the pattern in the text,
+        or -1 if the pattern is not found.
     """
     m, n = len(pattern), len(text)
     if m == 0:
@@ -17,3 +35,12 @@ def boyer_moore(text, pattern):
             return i
         i += max(1, j - bad.get(text[i + j], -1))
     return -1
+
+if __name__ == "__main__":
+    text = "HERE IS A SIMPLE EXAMPLE"
+    pattern = "EXAMPLE"
+    index = boyer_moore(text, pattern)
+    if index != -1:
+        print(f'Pattern "{pattern}" found at index {index}')
+    else:
+        print(f'Pattern "{pattern}" not found')

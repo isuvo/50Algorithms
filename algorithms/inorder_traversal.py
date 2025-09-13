@@ -1,11 +1,17 @@
-def inorder(node):
-    """Return in-order traversal of a binary tree.
+"""In-order traversal of a binary tree.
 
-    Args:
-        node: root node with 'value', 'left', 'right'.
-    Returns:
-        List of visited values.
-    Complexity: Time O(n), Space O(n) recursion.
+Visits nodes in the order: left subtree, root, right subtree.
+
+Time complexity: O(n)
+Space complexity: O(h) recursion depth
+"""
+from typing import Any, List, Optional
+
+
+def inorder(node: Optional[Any]) -> List[Any]:
+    """Return values visited by in-order traversal.
+
+    Accepts any node object with ``left``, ``right``, and ``value`` attributes.
     """
     if node is None:
         return []

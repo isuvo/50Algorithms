@@ -1,11 +1,6 @@
-"""Demonstrate all algorithms with simple examples.
-
-Each function groups related algorithms and prints the result of a small
-example for quick manual verification.  The goal is readability rather than
-exhaustive testing.
-"""
-
 from dataclasses import dataclass
+
+
 
 from algorithms import (
     binary_search,
@@ -250,4 +245,3 @@ if __name__ == "__main__":
     demo_structures()
     demo_strings_dp()
     demo_misc()
-
