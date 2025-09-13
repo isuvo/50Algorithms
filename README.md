@@ -32,7 +32,8 @@ the whole demo script.
 
 A PDF copy of *50 Algorithms Every Programmer Should Know* is included at the
 repository root as `Imran A. 50 Algorithms Every Programmer Should Know, 2ed
-Python algorithms 2023.pdf.
+Python algorithms 2023.pdf`.  Read detailed explanations of each algorithm alongside the code in this
+repository.
 
 ## Implemented algorithms and complexities
 
@@ -142,5 +143,502 @@ Python algorithms 2023.pdf.
 47. `k_means` – Unsupervised clustering. Run: `python run_examples.py`
 48. `principal_component_analysis` – Dimensionality reduction. Run: `python run_examples.py`
 49. `apriori` – Frequent itemset mining. Run: `python run_examples.py`
-50. `simulated_annealing` – Stochastic optimization technique. Run: `python run_examples.p
+50. `simulated_annealing` – Stochastic optimization technique. Run: `python run_examples.py`
+
+## Individual algorithm examples
+
+1. `binary_search`
+
+```bash
+python - <<'PY'
+from algorithms import binary_search
+print(binary_search([1,2,3,4], 3))
+PY
+```
+
+2. `merge_sort`
+
+```bash
+python - <<'PY'
+from algorithms import merge_sort
+print(merge_sort([5,3,1]))
+PY
+```
+
+3. `quick_sort`
+
+```bash
+python - <<'PY'
+from algorithms import quick_sort
+print(quick_sort([3,1,4]))
+PY
+```
+
+4. `bfs`
+
+```bash
+python - <<'PY'
+from algorithms import bfs
+graph={0:[1,2],1:[3],2:[],3:[]}
+print(bfs(graph,0))
+PY
+```
+
+5. `dfs`
+
+```bash
+python - <<'PY'
+from algorithms import dfs
+graph={0:[1,2],1:[3],2:[],3:[]}
+print(dfs(graph,0))
+PY
+```
+
+6. `dijkstra`
+
+```bash
+python - <<'PY'
+from algorithms import dijkstra
+graph={'A':[('B',1),('C',4)],'B':[('C',2)],'C':[]}
+print(dijkstra(graph,'A'))
+PY
+```
+
+7. `bellman_ford`
+
+```bash
+python - <<'PY'
+from algorithms import bellman_ford
+graph={'A':[('B',1)],'B':[('C',2)],'C':[]}
+print(bellman_ford(graph,'A'))
+PY
+```
+
+8. `floyd_warshall`
+
+```bash
+python - <<'PY'
+from algorithms import floyd_warshall
+graph={'A':{'B':3},'B':{'C':4},'C':{}}
+print(floyd_warshall(graph))
+PY
+```
+
+9. `topological_sort`
+
+```bash
+python - <<'PY'
+from algorithms import topological_sort
+graph={'A':['B','C'],'B':['D'],'C':['D'],'D':[]}
+print(topological_sort(graph))
+PY
+```
+
+10. `kruskal`
+
+```bash
+python - <<'PY'
+from algorithms import kruskal
+vertices=[1,2,3]
+edges=[(1,2,1),(2,3,2),(1,3,3)]
+print(kruskal(vertices,edges))
+PY
+```
+
+11. `prim`
+
+```bash
+python - <<'PY'
+from algorithms import prim
+graph={1:[(2,1),(3,3)],2:[(3,2)],3:[]}
+print(prim(graph,1))
+PY
+```
+
+12. `a_star`
+
+```bash
+python - <<'PY'
+from algorithms import a_star
+graph={'A':[('B',1),('C',3)],'B':[('C',1)],'C':[]}
+heuristic=lambda n:0
+print(a_star(graph,'A','C',heuristic))
+PY
+```
+
+13. `binary_heap`
+
+```bash
+python - <<'PY'
+from algorithms import BinaryHeap
+h=BinaryHeap()
+for x in [3,1,4]:
+    h.push(x)
+print(h.pop())
+PY
+```
+
+14. `counting_sort`
+
+```bash
+python - <<'PY'
+from algorithms import counting_sort
+print(counting_sort([4,2,2,8,3]))
+PY
+```
+
+15. `radix_sort`
+
+```bash
+python - <<'PY'
+from algorithms import radix_sort
+print(radix_sort([170,45,75,90]))
+PY
+```
+
+16. `bucket_sort`
+
+```bash
+python - <<'PY'
+from algorithms import bucket_sort
+print(bucket_sort([0.32,0.25,0.75,0.19]))
+PY
+```
+
+17. `insertion_sort`
+
+```bash
+python - <<'PY'
+from algorithms import insertion_sort
+print(insertion_sort([3,1,2]))
+PY
+```
+
+18. `selection_sort`
+
+```bash
+python - <<'PY'
+from algorithms import selection_sort
+print(selection_sort([3,1,2]))
+PY
+```
+
+19. `bubble_sort`
+
+```bash
+python - <<'PY'
+from algorithms import bubble_sort
+print(bubble_sort([3,1,2]))
+PY
+```
+
+20. `heap_sort`
+
+```bash
+python - <<'PY'
+from algorithms import heap_sort
+print(heap_sort([3,1,4,1,5]))
+PY
+```
+
+21. `shell_sort`
+
+```bash
+python - <<'PY'
+from algorithms import shell_sort
+print(shell_sort([3,1,4,1,5]))
+PY
+```
+
+22. `inorder_traversal`
+
+```bash
+python - <<'PY'
+from algorithms import inorder
+class Node:
+    def __init__(self,val,left=None,right=None):
+        self.value=val; self.left=left; self.right=right
+root=Node(2,Node(1),Node(3))
+print(inorder(root))
+PY
+```
+
+23. `preorder_traversal`
+
+```bash
+python - <<'PY'
+from algorithms import preorder
+class Node:
+    def __init__(self,val,left=None,right=None):
+        self.value=val; self.left=left; self.right=right
+root=Node(2,Node(1),Node(3))
+print(preorder(root))
+PY
+```
+
+24. `postorder_traversal`
+
+```bash
+python - <<'PY'
+from algorithms import postorder
+class Node:
+    def __init__(self,val,left=None,right=None):
+        self.value=val; self.left=left; self.right=right
+root=Node(2,Node(1),Node(3))
+print(postorder(root))
+PY
+```
+
+25. `kmp_search`
+
+```bash
+python - <<'PY'
+from algorithms import kmp_search
+print(kmp_search('ababcabcab','abc'))
+PY
+```
+
+26. `rabin_karp`
+
+```bash
+python - <<'PY'
+from algorithms import rabin_karp
+print(rabin_karp('ababcabcab','abc'))
+PY
+```
+
+27. `boyer_moore`
+
+```bash
+python - <<'PY'
+from algorithms import boyer_moore
+print(boyer_moore('abcxabcdabxabcdabcdabcy','abcdabcy'))
+PY
+```
+
+28. `longest_common_subsequence`
+
+```bash
+python - <<'PY'
+from algorithms import lcs
+print(lcs('ABCBDAB','BDCAB'))
+PY
+```
+
+29. `longest_increasing_subsequence`
+
+```bash
+python - <<'PY'
+from algorithms import lis
+print(lis([3,1,2,1,8,5,6]))
+PY
+```
+
+30. `edit_distance`
+
+```bash
+python - <<'PY'
+from algorithms import edit_distance
+print(edit_distance('kitten','sitting'))
+PY
+```
+
+31. `knapsack_dp`
+
+```bash
+python - <<'PY'
+from algorithms import knapsack
+weights=[2,3,4]; values=[3,4,5]
+print(knapsack(weights, values, 5))
+PY
+```
+
+32. `coin_change_dp`
+
+```bash
+python - <<'PY'
+from algorithms import coin_change
+print(coin_change([1,3,4],6))
+PY
+```
+
+33. `strassen_matrix_multiply`
+
+```bash
+python - <<'PY'
+from algorithms import strassen
+a=[[1,2],[3,4]]
+b=[[5,6],[7,8]]
+print(strassen(a,b))
+PY
+```
+
+34. `union_find`
+
+```bash
+python - <<'PY'
+from algorithms import UnionFind
+uf=UnionFind([1,2,3])
+uf.union(1,2)
+print(uf.find(2))
+PY
+```
+
+35. `quickselect`
+
+```bash
+python - <<'PY'
+from algorithms import quickselect
+print(quickselect([7,2,1,6,8,5,3,4],2))
+PY
+```
+
+36. `huffman_coding`
+
+```bash
+python - <<'PY'
+from algorithms import huffman_encode
+print(huffman_encode('banana'))
+PY
+```
+
+37. `sieve_of_eratosthenes`
+
+```bash
+python - <<'PY'
+from algorithms import sieve_of_eratosthenes
+print(sieve_of_eratosthenes(10))
+PY
+```
+
+38. `euclid_gcd`
+
+```bash
+python - <<'PY'
+from algorithms import euclid_gcd
+print(euclid_gcd(48,18))
+PY
+```
+
+39. `fast_fourier_transform`
+
+```bash
+python - <<'PY'
+from algorithms import fft
+print(fft([0,1,0,0]))
+PY
+```
+
+40. `exponentiation_by_squaring`
+
+```bash
+python - <<'PY'
+from algorithms import power
+print(power(2,10))
+PY
+```
+
+41. `trie`
+
+```bash
+python - <<'PY'
+from algorithms import Trie
+t=Trie()
+t.insert('hi')
+print(t.search('hi'))
+PY
+```
+
+42. `pagerank`
+
+```bash
+python - <<'PY'
+from algorithms import pagerank
+graph={'A':['B'],'B':['C'],'C':['A']}
+print(pagerank(graph))
+PY
+```
+
+43. `minimax`
+
+```bash
+python - <<'PY'
+from algorithms import MinimaxNode, minimax
+tree=MinimaxNode(children=[MinimaxNode(value=3), MinimaxNode(children=[MinimaxNode(value=2), MinimaxNode(value=5)])])
+print(minimax(tree, True))
+PY
+```
+
+44. `monte_carlo`
+
+```bash
+python - <<'PY'
+from algorithms import monte_carlo_pi
+print(monte_carlo_pi(1000))
+PY
+```
+
+45. `gradient_descent`
+
+```bash
+python - <<'PY'
+from algorithms import gradient_descent
+f=lambda x:(x-3)**2
+df=lambda x:2*(x-3)
+print(gradient_descent(f, df, 0)[0])
+PY
+```
+
+46. `naive_bayes`
+
+```bash
+python - <<'PY'
+from algorithms import NaiveBayes
+X=[{'weather':'sunny'},{'weather':'rainy'}]
+y=['dry','wet']
+model=NaiveBayes()
+model.fit(X,y)
+print(model.predict({'weather':'rainy'}))
+PY
+```
+
+47. `k_means`
+
+```bash
+python - <<'PY'
+from algorithms import k_means
+points=[(0,0),(1,1),(5,5)]
+print(k_means(points,2))
+PY
+```
+
+48. `principal_component_analysis`
+
+```bash
+python - <<'PY'
+from algorithms import pca
+points=[(1,2),(2,3),(3,4)]
+print(pca(points))
+PY
+```
+
+49. `apriori`
+
+```bash
+python - <<'PY'
+from algorithms import apriori
+transactions=[[1,2],[1,2,3],[1,3]]
+print(apriori(transactions,2))
+PY
+```
+
+50. `simulated_annealing`
+
+```bash
+python - <<'PY'
+from algorithms import simulated_annealing
+f=lambda x:(x-2)**2
+print(simulated_annealing(f,0)[0])
+PY
+
 
