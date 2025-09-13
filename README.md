@@ -145,4 +145,5 @@ repository.
 47. `k_means` – Unsupervised clustering. Run: `python run_examples.py`
 48. `principal_component_analysis` – Dimensionality reduction. Run: `python run_examples.py`
 49. `apriori` – Frequent itemset mining. Run: `python run_examples.py`
-50. `simulated_annealing` – Stochastic optimization technique. Run: `python run_examples.py`
+50. `simulated_annealing` – Stochastic optimization technique. Run: `python run_examples.p
+
