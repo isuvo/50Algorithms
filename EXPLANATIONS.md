@@ -1,6 +1,6 @@
 # Algorithm Explanations 📘
 
-Friendly, step-by-step guides to each algorithm:
+Step-by-step guides to each algorithm:
 
 1. [Binary Search](explanations/binary-search.md)
 2. [Merge Sort](explanations/merge-sort.md)
