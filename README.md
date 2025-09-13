@@ -32,9 +32,7 @@ the whole demo script.
 
 A PDF copy of *50 Algorithms Every Programmer Should Know* is included at the
 repository root as `Imran A. 50 Algorithms Every Programmer Should Know, 2ed
-Python algorithms 2023.pdf`.  Open it with your favourite PDF reader
-(`xdg-open` on Linux, `open` on macOS, or simply double‑click on Windows) to
-read detailed explanations of each algorithm alongside the code in this
+Python algorithms 2023.pdf`.  Read detailed explanations of each algorithm alongside the code in this
 repository.
 
 ## Implemented algorithms and complexities
@@ -642,5 +640,5 @@ from algorithms import simulated_annealing
 f=lambda x:(x-2)**2
 print(simulated_annealing(f,0)[0])
 PY
-```
+
 
