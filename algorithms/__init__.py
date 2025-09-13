@@ -26,6 +26,31 @@ from .sieve_of_eratosthenes import sieve_of_eratosthenes
 from .exponentiation_by_squaring import power
 from .kmp_search import kmp_search
 from .rabin_karp import rabin_karp
+from .a_star import a_star
+from .binary_heap import BinaryHeap
+from .inorder_traversal import inorder
+from .preorder_traversal import preorder
+from .postorder_traversal import postorder
+from .boyer_moore import boyer_moore
+from .longest_common_subsequence import lcs
+from .longest_increasing_subsequence import lis
+from .edit_distance import edit_distance
+from .knapsack_dp import knapsack
+from .coin_change_dp import coin_change
+from .strassen_matrix_multiply import strassen
+from .huffman_coding import huffman_encode
+from .fast_fourier_transform import fft
+from .trie import Trie
+from .pagerank import pagerank
+from .minimax import Node as MinimaxNode, minimax
+from .monte_carlo import monte_carlo_pi
+from .gradient_descent import gradient_descent
+from .naive_bayes import NaiveBayes
+from .k_means import k_means
+from .principal_component_analysis import pca
+from .apriori import apriori
+from .simulated_annealing import simulated_annealing
+
 
 __all__ = [
     "binary_search",
@@ -54,4 +79,29 @@ __all__ = [
     "power",
     "kmp_search",
     "rabin_karp",
+    "a_star",
+    "BinaryHeap",
+    "inorder",
+    "preorder",
+    "postorder",
+    "boyer_moore",
+    "lcs",
+    "lis",
+    "edit_distance",
+    "knapsack",
+    "coin_change",
+    "strassen",
+    "huffman_encode",
+    "fft",
+    "Trie",
+    "pagerank",
+    "MinimaxNode",
+    "minimax",
+    "monte_carlo_pi",
+    "gradient_descent",
+    "NaiveBayes",
+    "k_means",
+    "pca",
+    "apriori",
+    "simulated_annealing",
 ]

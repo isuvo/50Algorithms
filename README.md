@@ -13,88 +13,109 @@ python run_examples.py
 to run the sample implementations and see output for the algorithms that are currently implemented.
 
 ## Implemented algorithms and complexities
-
-| # | Algorithm       | Description                                   | Time complexity | Space complexity |
-| - | --------------- | --------------------------------------------- | --------------- | ---------------- |
-| 1 | Binary Search   | Locate an item in a sorted list via bisection | O(log n)        | O(1)             |
-| 2 | Merge Sort      | Divide-and-conquer stable sorting             | O(n log n)      | O(n)             |
-| 3 | Quick Sort      | Partition-based sorting around a pivot        | O(n log n)*     | O(log n)         |
-| 4 | Insertion Sort  | Insert each item into sorted prefix          | O(n^2)          | O(1)             |
-| 5 | Selection Sort  | Repeatedly select minimum element            | O(n^2)          | O(1)             |
-| 6 | Bubble Sort     | Swap adjacent out-of-order items             | O(n^2)          | O(1)             |
-| 7 | Counting Sort   | Count occurrences of small integer keys      | O(n + k)        | O(k)             |
-| 8 | Radix Sort      | Digit-wise sorting using counting sort       | O(d*(n + b))    | O(n + b)         |
-| 9 | Bucket Sort     | Distribute and sort into buckets             | O(n + k)        | O(n)             |
-| 10 | Heap Sort       | Sort via binary heap operations              | O(n log n)      | O(n)             |
-| 11 | Shell Sort      | Gap-based insertion sort                     | ~O(n^{3/2})     | O(1)             |
-| 12 | Quickselect     | Select k-th element using partitioning       | O(n) avg        | O(1)             |
-| 13 | Breadth-First Search | Layer-by-layer graph traversal          | O(V + E)        | O(V)             |
-| 14 | Depth-First Search  | Recursive graph traversal                | O(V + E)        | O(V)             |
-| 15 | Dijkstra            | Shortest paths in weighted graphs        | O(E log V)      | O(V)             |
-| 16 | Bellman-Ford        | Shortest paths with negative weights     | O(V * E)        | O(V)             |
-| 17 | Floyd-Warshall      | All-pairs shortest paths                 | O(V^3)          | O(V^2)           |
-| 18 | Topological Sort    | DAG vertex ordering                      | O(V + E)        | O(V)             |
-| 19 | Kruskal             | Minimum spanning tree via edge sorting   | O(E log E)      | O(V)             |
-| 20 | Prim                | Minimum spanning tree via greedy growth  | O(E log V)      | O(V)             |
-| 21 | Union-Find          | Disjoint-set union structure             | ~O(α(n))        | O(n)             |
-| 22 | Euclid GCD          | Greatest common divisor                  | O(log n)        | O(1)             |
-| 23 | Sieve of Eratosthenes | Generate primes up to n               | O(n log log n)  | O(n)             |
-| 24 | Exponentiation by Squaring | Fast power calculation           | O(log n)        | O(1)             |
-| 25 | KMP Search          | Linear-time substring search             | O(n + m)        | O(m)             |
-| 26 | Rabin-Karp          | Rolling-hash substring search            | O(n + m) avg    | O(1)             |
+| # | Algorithm | Description | Time complexity | Space complexity |
+| - | --------- | ----------- | --------------- | ---------------- |
+| 1 | Binary Search | Locate an item in a sorted list via bisection | O(log n) | O(1) |
+| 2 | Merge Sort | Divide-and-conquer stable sorting | O(n log n) | O(n) |
+| 3 | Quick Sort | Partition-based sorting around a pivot | O(n log n)* | O(log n) |
+| 4 | Insertion Sort | Insert each item into sorted prefix | O(n^2) | O(1) |
+| 5 | Selection Sort | Repeatedly select minimum element | O(n^2) | O(1) |
+| 6 | Bubble Sort | Swap adjacent out-of-order items | O(n^2) | O(1) |
+| 7 | Counting Sort | Count occurrences of small integer keys | O(n + k) | O(k) |
+| 8 | Radix Sort | Digit-wise sorting using counting sort | O(d*(n + b)) | O(n + b) |
+| 9 | Bucket Sort | Distribute and sort into buckets | O(n + k) | O(n) |
+| 10 | Heap Sort | Sort via binary heap operations | O(n log n) | O(n) |
+| 11 | Shell Sort | Gap-based insertion sort | ~O(n^{3/2}) | O(1) |
+| 12 | Quickselect | Select k-th element using partitioning | O(n) avg | O(1) |
+| 13 | Breadth-First Search | Layer-by-layer graph traversal | O(V + E) | O(V) |
+| 14 | Depth-First Search | Recursive graph traversal | O(V + E) | O(V) |
+| 15 | Dijkstra | Shortest paths in weighted graphs | O(E log V) | O(V) |
+| 16 | Bellman-Ford | Shortest paths with negative weights | O(V * E) | O(V) |
+| 17 | Floyd-Warshall | All-pairs shortest paths | O(V^3) | O(V^2) |
+| 18 | Topological Sort | DAG vertex ordering | O(V + E) | O(V) |
+| 19 | Kruskal | Minimum spanning tree via edge sorting | O(E log E) | O(V) |
+| 20 | Prim | Minimum spanning tree via greedy growth | O(E log V) | O(V) |
+| 21 | Union-Find | Disjoint-set union structure | ~O(α(n)) | O(n) |
+| 22 | Euclid GCD | Greatest common divisor | O(log n) | O(1) |
+| 23 | Sieve of Eratosthenes | Generate primes up to n | O(n log log n) | O(n) |
+| 24 | Exponentiation by Squaring | Fast power calculation | O(log n) | O(1) |
+| 25 | KMP Search | Linear-time substring search | O(n + m) | O(m) |
+| 26 | Rabin-Karp | Rolling-hash substring search | O(n + m) avg | O(1) |
+| 27 | Boyer-Moore | Efficient substring search using heuristics | O(n + m) avg | O(m) |
+| 28 | Longest Common Subsequence | DP for longest common subsequence | O(n*m) | O(n*m) |
+| 29 | Longest Increasing Subsequence | Find longest increasing subsequence | O(n log n) | O(n) |
+| 30 | Edit Distance | Levenshtein distance between strings | O(n*m) | O(n*m) |
+| 31 | Knapsack DP | 0/1 knapsack via dynamic programming | O(n*W) | O(n*W) |
+| 32 | Coin Change DP | Fewest coins for an amount | O(n*amount) | O(amount) |
+| 33 | Strassen Matrix Multiply | Fast matrix multiplication | O(n^{log₂7}) | O(n^2) |
+| 34 | Huffman Coding | Optimal prefix codes | O(n log n) | O(n) |
+| 35 | Fast Fourier Transform | Efficient discrete Fourier transform | O(n log n) | O(n) |
+| 36 | Trie | Prefix tree for fast lookups | O(m) | O(total chars) |
+| 37 | PageRank | Rank web pages via link analysis | O(iter*(V+E)) | O(V) |
+| 38 | Minimax | Game tree search for optimal play | O(b^d) | O(d) |
+| 39 | Monte Carlo | Probabilistic simulation algorithm | O(n) | O(1) |
+| 40 | Gradient Descent | Optimization via gradient steps | O(iter) | O(1) |
+| 41 | Naive Bayes | Probabilistic classifier | O(n*f) | O(f*c) |
+| 42 | K-means | Unsupervised clustering | O(iter*n*k) | O(k) |
+| 43 | Principal Component Analysis | Dimensionality reduction | O(n*d^2) | O(d^2) |
+| 44 | Apriori | Frequent itemset mining | O(n*2^m) | O(2^m) |
+| 45 | Simulated Annealing | Stochastic optimization technique | O(iter) | O(1) |
+| 46 | A* Search | Heuristic pathfinding | O(E log V) | O(V) |
+| 47 | Binary Heap | Priority queue operations | O(log n) | O(n) |
+| 48 | In-order Traversal | Binary tree traversal | O(n) | O(n) |
+| 49 | Pre-order Traversal | Binary tree traversal | O(n) | O(n) |
+| 50 | Post-order Traversal | Binary tree traversal | O(n) | O(n) |
 
 \* Worst case O(n^2)
 
 ## Algorithm index
-
-1. `binary_search_1` – Locate an item in a sorted list by halving the search interval. Run: `python run_examples.py`
-2. `merge_sort_2` – Stable divide-and-conquer sorting by merging sorted halves. Run: `python run_examples.py`
-3. `quick_sort_3` – Partition-based sorting around a pivot. Run: `python run_examples.py`
-4. `bfs_4` – Layer-by-layer graph traversal using a queue. Run: `python run_examples.py`
-5. `dfs_5` – Depth-first graph traversal using recursion or a stack. Run: `python run_examples.py`
-6. `dijkstra_6` – Shortest paths in weighted graphs with non-negative edges. Run: `python run_examples.py`
-7. `bellman_ford_7` – Shortest paths allowing negative edges. Run: `python run_examples.py`
-8. `floyd_warshall_8` – All-pairs shortest paths via dynamic programming. Run: `python run_examples.py`
-9. `topological_sort_9` – Linear ordering of DAG vertices. Run: `python run_examples.py`
-10. `kruskal_10` – Minimum spanning tree via edge sorting. Run: `python run_examples.py`
-11. `prim_11` – Minimum spanning tree using greedy expansion. Run: `python run_examples.py`
-12. `a_star_12` – Heuristic pathfinding. *Implementation pending*
-13. `binary_heap_13` – Priority queue based on a heap. *Implementation pending*
-14. `counting_sort_14` – Linear-time sorting for small integer keys. Run: `python run_examples.py`
-15. `radix_sort_15` – Digit-by-digit sorting. Run: `python run_examples.py`
-16. `bucket_sort_16` – Distribution sorting into buckets. Run: `python run_examples.py`
-17. `insertion_sort_17` – In-place iterative insertion. Run: `python run_examples.py`
-18. `selection_sort_18` – In-place selection of minimum elements. Run: `python run_examples.py`
-19. `bubble_sort_19` – Adjacent swaps until sorted. Run: `python run_examples.py`
-20. `heap_sort_20` – Sorting using a binary heap. Run: `python run_examples.py`
-21. `shell_sort_21` – Gap-based generalization of insertion sort. Run: `python run_examples.py`
-22. `inorder_traversal_22` – In-order binary tree traversal. *Implementation pending*
-23. `preorder_traversal_23` – Pre-order binary tree traversal. *Implementation pending*
-24. `postorder_traversal_24` – Post-order binary tree traversal. *Implementation pending*
-25. `kmp_search_25` – Linear-time substring search. Run: `python run_examples.py`
-26. `rabin_karp_26` – Rolling hash based substring search. Run: `python run_examples.py`
-27. `boyer_moore_27` – Efficient substring search using heuristics. *Implementation pending*
-28. `longest_common_subsequence_28` – DP for longest common subsequence. *Implementation pending*
-29. `longest_increasing_subsequence_29` – Find longest increasing subsequence. *Implementation pending*
-30. `edit_distance_30` – Levenshtein distance between strings. *Implementation pending*
-31. `knapsack_dp_31` – 0/1 knapsack via dynamic programming. *Implementation pending*
-32. `coin_change_dp_32` – Fewest coins for an amount. *Implementation pending*
-33. `strassen_matrix_multiply_33` – Fast matrix multiplication. *Implementation pending*
-34. `union_find_34` – Disjoint set data structure. Run: `python run_examples.py`
-35. `quickselect_35` – Selection algorithm to find k-th element. Run: `python run_examples.py`
-36. `huffman_coding_36` – Optimal prefix codes. *Implementation pending*
-37. `sieve_of_eratosthenes_37` – Generate prime numbers efficiently. Run: `python run_examples.py`
-38. `euclid_gcd_38` – Compute greatest common divisor. Run: `python run_examples.py`
-39. `fast_fourier_transform_39` – Efficient discrete Fourier transform. *Implementation pending*
-40. `exponentiation_by_squaring_40` – Fast power calculation. Run: `python run_examples.py`
-41. `trie_41` – Prefix tree for fast lookups. *Implementation pending*
-42. `pagerank_42` – Rank web pages via link analysis. *Implementation pending*
-43. `minimax_43` – Game tree search for optimal play. *Implementation pending*
-44. `monte_carlo_44` – Probabilistic simulation algorithm. *Implementation pending*
-45. `gradient_descent_45` – Optimization via gradient steps. *Implementation pending*
-46. `naive_bayes_46` – Probabilistic classifier. *Implementation pending*
-47. `k_means_47` – Unsupervised clustering. *Implementation pending*
-48. `principal_component_analysis_48` – Dimensionality reduction. *Implementation pending*
-49. `apriori_49` – Frequent itemset mining. *Implementation pending*
-50. `simulated_annealing_50` – Stochastic optimization technique. *Implementation pending*
-
+1. `binary_search` – Locate an item in a sorted list by halving the search interval. Run: `python run_examples.py`
+2. `merge_sort` – Stable divide-and-conquer sorting by merging sorted halves. Run: `python run_examples.py`
+3. `quick_sort` – Partition-based sorting around a pivot. Run: `python run_examples.py`
+4. `bfs` – Layer-by-layer graph traversal using a queue. Run: `python run_examples.py`
+5. `dfs` – Depth-first graph traversal using recursion or a stack. Run: `python run_examples.py`
+6. `dijkstra` – Shortest paths in weighted graphs with non-negative edges. Run: `python run_examples.py`
+7. `bellman_ford` – Shortest paths allowing negative edges. Run: `python run_examples.py`
+8. `floyd_warshall` – All-pairs shortest paths via dynamic programming. Run: `python run_examples.py`
+9. `topological_sort` – Linear ordering of DAG vertices. Run: `python run_examples.py`
+10. `kruskal` – Minimum spanning tree via edge sorting. Run: `python run_examples.py`
+11. `prim` – Minimum spanning tree using greedy expansion. Run: `python run_examples.py`
+12. `a_star` – Heuristic pathfinding. Run: `python run_examples.py`
+13. `binary_heap` – Priority queue based on a heap. Run: `python run_examples.py`
+14. `counting_sort` – Linear-time sorting for small integer keys. Run: `python run_examples.py`
+15. `radix_sort` – Digit-by-digit sorting. Run: `python run_examples.py`
+16. `bucket_sort` – Distribution sorting into buckets. Run: `python run_examples.py`
+17. `insertion_sort` – In-place iterative insertion. Run: `python run_examples.py`
+18. `selection_sort` – In-place selection of minimum elements. Run: `python run_examples.py`
+19. `bubble_sort` – Adjacent swaps until sorted. Run: `python run_examples.py`
+20. `heap_sort` – Sorting using a binary heap. Run: `python run_examples.py`
+21. `shell_sort` – Gap-based generalization of insertion sort. Run: `python run_examples.py`
+22. `inorder_traversal` – In-order binary tree traversal. Run: `python run_examples.py`
+23. `preorder_traversal` – Pre-order binary tree traversal. Run: `python run_examples.py`
+24. `postorder_traversal` – Post-order binary tree traversal. Run: `python run_examples.py`
+25. `kmp_search` – Linear-time substring search. Run: `python run_examples.py`
+26. `rabin_karp` – Rolling hash based substring search. Run: `python run_examples.py`
+27. `boyer_moore` – Efficient substring search using heuristics. Run: `python run_examples.py`
+28. `longest_common_subsequence` – DP for longest common subsequence. Run: `python run_examples.py`
+29. `longest_increasing_subsequence` – Find longest increasing subsequence. Run: `python run_examples.py`
+30. `edit_distance` – Levenshtein distance between strings. Run: `python run_examples.py`
+31. `knapsack_dp` – 0/1 knapsack via dynamic programming. Run: `python run_examples.py`
+32. `coin_change_dp` – Fewest coins for an amount. Run: `python run_examples.py`
+33. `strassen_matrix_multiply` – Fast matrix multiplication. Run: `python run_examples.py`
+34. `union_find` – Disjoint set data structure. Run: `python run_examples.py`
+35. `quickselect` – Selection algorithm to find k-th element. Run: `python run_examples.py`
+36. `huffman_coding` – Optimal prefix codes. Run: `python run_examples.py`
+37. `sieve_of_eratosthenes` – Generate prime numbers efficiently. Run: `python run_examples.py`
+38. `euclid_gcd` – Compute greatest common divisor. Run: `python run_examples.py`
+39. `fast_fourier_transform` – Efficient discrete Fourier transform. Run: `python run_examples.py`
+40. `exponentiation_by_squaring` – Fast power calculation. Run: `python run_examples.py`
+41. `trie` – Prefix tree for fast lookups. Run: `python run_examples.py`
+42. `pagerank` – Rank web pages via link analysis. Run: `python run_examples.py`
+43. `minimax` – Game tree search for optimal play. Run: `python run_examples.py`
+44. `monte_carlo` – Probabilistic simulation algorithm. Run: `python run_examples.py`
+45. `gradient_descent` – Optimization via gradient steps. Run: `python run_examples.py`
+46. `naive_bayes` – Probabilistic classifier. Run: `python run_examples.py`
+47. `k_means` – Unsupervised clustering. Run: `python run_examples.py`
+48. `principal_component_analysis` – Dimensionality reduction. Run: `python run_examples.py`
+49. `apriori` – Frequent itemset mining. Run: `python run_examples.py`
+50. `simulated_annealing` – Stochastic optimization technique. Run: `python run_examples.p
